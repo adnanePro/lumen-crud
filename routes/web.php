@@ -17,6 +17,8 @@ $router->get('/', function () use ($router) {
     return $router->app->version();
 });
 
+$router->get('/test','TestController@test');
+
 
 Route::group(['prefix' => 'api'], function () use ($controllers) {
 
